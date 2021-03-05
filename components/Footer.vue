@@ -16,7 +16,7 @@
                         <p>{{$t('location1')}},</p>
                         <p>{{$t('location2')}}</p>
                         <p>{{$t('location3')}}</p>
-                        <a href="mailto:admin@" class="white">pethotelbangkok@gmail.com</a>
+                        <a href="mailto:admin@" class="white">zoootelzabota@gmail.com</a>
                     </div>
                     <div class="phone_block">
                         <a href="tel:/+380676473300" class="white">Тел: +380676473300</a>

@@ -14,7 +14,7 @@
     </section>
     <section class="services pb">
         <div class="s_wrapper">
-            <img src="https://static.wixstatic.com/media/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.jpg/v1/fill/w_476,h_492,al_c,q_80,usm_0.66_1.00_0.01/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.webp" alt="">
+            <img src="~~/assets/img/s/b2.jpg" alt="">
         </div>
         <div class="s_wrapper  text">
             <div>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="s_wrapper">
-            <img src="https://static.wixstatic.com/media/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.jpg/v1/fill/w_476,h_492,al_c,q_80,usm_0.66_1.00_0.01/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.webp" alt="">
+            <img src="~~/assets/img/s/b2.jpg" alt="">
         </div>
         <div class="s_wrapper  text">
             <div>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="s_wrapper">
-            <img src="https://static.wixstatic.com/media/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.jpg/v1/fill/w_476,h_492,al_c,q_80,usm_0.66_1.00_0.01/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.webp" alt="">
+            <img src="~~/assets/img/s/b3.jpg" alt="">
         </div>
         <div class="s_wrapper text">
             <div>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="s_wrapper">
-            <img src="https://static.wixstatic.com/media/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.jpg/v1/fill/w_476,h_492,al_c,q_80,usm_0.66_1.00_0.01/3c9e04_a7b1f9537b2a43848d2f4b2b9b670ded~mv2.webp" alt="">
+            <img src="~~/assets/img/s/b3.jpg" alt="">
         </div>
     </section>
     </div>

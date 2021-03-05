@@ -17,8 +17,8 @@
                 </div>
                 <div class="service_block pb right">
                     <div class="imgs">
-                        <img src="https://static.wixstatic.com/media/3c9e04_ddc475e15b8b4351aad8b397b6ef480e~mv2_d_1758_1365_s_2.jpg/v1/crop/x_232,y_0,w_1293,h_1365/fill/w_360,h_380,al_c,q_80,usm_0.66_1.00_0.01/IMG_8460_edited.webp" alt="">
-                        <img src="https://static.wixstatic.com/media/3c9e04_a00eca2d6a494f6ebb442afb063231df~mv2_d_5047_3365_s_4_2.jpg/v1/fill/w_363,h_360,al_c,q_80,usm_0.66_1.00_0.01/3c9e04_a00eca2d6a494f6ebb442afb063231df~mv2_d_5047_3365_s_4_2.webp" alt="">
+                        <img src="~~/assets/img/m/cage1.jpg" alt="">
+                        <img src="~~/assets/img/m/cage2.jpg" alt="">
                     </div>
                     <div class="desc">
                         <span class="big_nmbr">02</span>
@@ -47,8 +47,8 @@
                 </div>
                 <div class="service_block pb right">
                     <div class="imgs">
-                        <img src="https://static.wixstatic.com/media/3c9e04_ddc475e15b8b4351aad8b397b6ef480e~mv2_d_1758_1365_s_2.jpg/v1/crop/x_232,y_0,w_1293,h_1365/fill/w_360,h_380,al_c,q_80,usm_0.66_1.00_0.01/IMG_8460_edited.webp" alt="">
-                        <img src="https://static.wixstatic.com/media/3c9e04_a00eca2d6a494f6ebb442afb063231df~mv2_d_5047_3365_s_4_2.jpg/v1/fill/w_363,h_360,al_c,q_80,usm_0.66_1.00_0.01/3c9e04_a00eca2d6a494f6ebb442afb063231df~mv2_d_5047_3365_s_4_2.webp" alt="">
+                        <img src="~~/assets/img/m/xno1.jpg" alt="">
+                        <img src="~~/assets/img/m/xno2.jpg" alt="">
                     </div>
                     <div class="desc">
                         <span class="big_nmbr">04</span>
@@ -75,6 +75,9 @@
                 display: grid;
                 position: relative;
                 width: 50%;
+                img { 
+                    max-width: 375px;
+                    }
                 img:first-child {
                     justify-self: end;
                 }

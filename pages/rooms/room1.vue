@@ -9,7 +9,7 @@
             <hr class="normal">
             <div class="room">
                 <div class="room_img">
-                    <img src="https://static.wixstatic.com/media/3c9e04_21ad46c71ebe4c6ab0f5a99eeb24402e~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_587,h_444,q_85,usm_0.66_1.00_0.01/3c9e04_21ad46c71ebe4c6ab0f5a99eeb24402e~mv2_d_5184_3456_s_4_2.jpg" alt="">
+                    <img src="~~/assets/img/rooms/r1.jpg" alt="">
                 </div>
                 <div class="room_desc">
                     <h3>Стандарт</h3>

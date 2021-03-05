@@ -156,14 +156,3 @@ input[type=checkbox]:checked ~ #overlay-button {
 }
 
 </style>
-<script>
-export default {
-  mounted () {
-    document.querySelector('#overlay').addEventListener('click', () => {
-      // console.log('overlay')
-      classList.add('active')
-    })
-    
-  }
-}
-</script>
