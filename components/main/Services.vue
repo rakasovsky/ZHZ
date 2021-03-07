@@ -1,7 +1,7 @@
 <template>
     <section class="main_page_service m25">
                 <div class="service_block pb left">
-                    <div class="imgs">
+                    <div class="imgs mp15">
                         <img src="~~/assets/img/m/r1.jpg" alt="">
                         <img src="~~/assets/img/m/r2.jpg" alt="">
                     </div>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="service_block pb right">
-                    <div class="imgs">
+                    <div class="imgs mp15">
                         <img src="~~/assets/img/m/cage1.jpg" alt="">
                         <img src="~~/assets/img/m/cage2.jpg" alt="">
                     </div>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="service_block pb left">
-                    <div class="imgs">
+                    <div class="imgs mp15">
                         <img src="~~/assets/img/m/v1.jpg" alt="">
                         <img src="~~/assets/img/m/v2.jpg" alt="">
                     </div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="service_block pb right">
-                    <div class="imgs">
+                    <div class="imgs mp15">
                         <img src="~~/assets/img/m/xno1.jpg" alt="">
                         <img src="~~/assets/img/m/xno2.jpg" alt="">
                     </div>

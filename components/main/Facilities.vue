@@ -1,6 +1,6 @@
 <template>
          <section class="facilities_blocks">
-                <div class="img_wrapper">
+                <div class="img_wrapper mp15">
                     <img src="~~/assets/img/s/b1.jpg"  alt="decoration">
                     <div class="p_overlay">
                         <div>
@@ -9,7 +9,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img_wrapper">
+                <div class="img_wrapper mp15">
                     <img src="~~/assets/img/s/b1.jpg"  alt="decoration">
                     <div class="p_overlay">
                         <div>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img_wrapper">
+                <div class="img_wrapper mp15">
                     <img src="~~/assets/img/s/b1.jpg"  alt="decoration">
                     <div class="p_overlay">
                         <div>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img_wrapper">
+                <div class="img_wrapper mp15">
                     <img src="~~/assets/img/s/b1.jpg"  alt="decoration">
                     <div class="p_overlay">
                         <div>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img_wrapper">
+                <div class="img_wrapper mp15">
                     <img src="~~/assets/img/s/b1.jpg"  alt="decoration">
                     <div class="p_overlay">
                         <div>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img_wrapper">
+                <div class="img_wrapper mp15">
                     <img src="~~/assets/img/s/b1.jpg"  alt="decoration">
                     <div class="p_overlay">
                         <div>

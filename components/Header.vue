@@ -1,6 +1,8 @@
 <template>
-      <header>
-            <div class="header_desktop m25">
+    <header>
+        <div class="header_desktop navbar-area m25">
+          <div class="container">
+            <nav class="site-navbar">
                 <nuxt-link :to="localePath('/')">
                 <div class="logo_wrapper">
                     <img src="@/assets/img/Zabota.png" alt="logo">
@@ -11,16 +13,17 @@
                     </div>
                 </div>
                 </nuxt-link>
-                <nav>
-                    <ul>
-                        <li><nuxt-link :to="localePath('rooms')">Номера</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('services')">{{ $t('service')}}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('about')">{{ $t('about')}}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('gallery')">{{ $t('gallery')}}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('contacts')">{{ $t('contacts')}}</nuxt-link></li>
-                    </ul>
-                </nav>
-                <div class="lang_switcher">
+              <ul>
+                <li><nuxt-link :to="localePath('rooms')">Номера</nuxt-link></li>
+                <li><nuxt-link :to="localePath('services')">{{ $t('service')}}</nuxt-link></li>
+                <li><nuxt-link :to="localePath('about')">{{ $t('about')}}</nuxt-link></li>
+                <li><nuxt-link :to="localePath('gallery')">{{ $t('gallery')}}</nuxt-link></li>
+                <li><nuxt-link :to="localePath('contacts')">{{ $t('contacts')}}</nuxt-link></li>
+              </ul>
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+              <div class="lang_switcher">
                     <nuxt-link
                         v-for="locale in $i18n.locales"
                         v-if="locale.code !== $i18n.locale"
@@ -28,131 +31,162 @@
                         :to="switchLocalePath(locale.code)">
                         {{ locale.name }}
                     </nuxt-link>
-                </div>
-            </div>
-            <div class="header_mobile">
-                <input type="checkbox" id="overlay-input" />
-                <nuxt-link :to="localePath('/')">
-                <div class="logo_wrapper">
-                  <img src="@/assets/img/Zabota.png" alt="logo">
-                    <div class="logo_text">
-                          <span class="fs24">Зоо</span>
-                          <span class="fs24">{{$t('hotel')}}</span>
-                          <span class="fs42">Забота</span>
-                      </div>
-                </div>
-                </nuxt-link>
-                <label for="overlay-input" id="overlay-button"><span></span></label>
-                <div id="overlay">
-                    <ul>
-                        <li><nuxt-link :to="localePath('rooms')">Номера</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('services')">{{ $t('service')}}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('about')">{{ $t('about')}}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('gallery')">{{ $t('gallery')}}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('contacts')">{{ $t('contacts')}}</nuxt-link></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+             </div>
+            </nav>
+          </div>
+        </div>
+    </header>
 </template>
+<style scoped>
 
-<style lang="scss" scoped>
-
-
-
-
-#overlay-button {
-  position: absolute;
-  right: 2em;
-  top: 1.5em;
-  padding: 26px 11px;
-  z-index: 5;
-  cursor: pointer;
-  user-select: none;
-  span {
-      height: 4px;
-      width: 35px;
-      border-radius: 2px;
-      background-color: black;
-      position: relative;
-      display: block;
-      transition: all .2s ease-in-out;
-      &:before {
-        top: -10px;
-        visibility: visible;
-      }
-      &:after {
-        top: 10px;
-      }
-      &:before, &:after {
-          height: 4px;
-          width: 35px;
-          border-radius: 2px;
-          background-color: black;
-          position: absolute;
-          content: "";
-          transition: all .2s ease-in-out;
-      }
-    }
-    &:hover span, &:hover span:before, &:hover span:after {
-      background: #333332;
-    }
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-input[type=checkbox] {
+
+
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
   display: none;
 }
-
-input[type=checkbox]:checked ~ #overlay {
-  visibility: visible;
+.nav-toggler span, 
+.nav-toggler span:before, 
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  transition: .3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
 }
 
-input[type=checkbox]:checked ~ #overlay-button {
-  &:hover span, span{
-    background: transparent;
-  }
-  span {
-    &:before {
-      transform: rotate(45deg) translate(7px, 7px);
-      opacity: 1;
-    }
-    &:after {
-      transform: rotate(-45deg) translate(7px, -7px);
-    }
-  }
+.intro-area {
+  height: calc(100vh - 61px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.intro-area h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+.intro-area p {
+  font-size: 18px;
 }
 
-#overlay {
-  height: 100vh;
-  width: 100vw;
-  background: white;
-  z-index: 2;
-  visibility: hidden;
-  position: fixed;
-  &.active {
-    visibility: visible;
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
   }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* navbar css for mobile start */
+  .nav-toggler{
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+    /* position: sticky; */
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 140px;
     flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    padding-left: 0;
-    list-style-type: none;
-    li {
-      padding: 1em;
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 1.5em;
-        &:hover {
-          color: #333332;
-        }
-      }
-    }
+    align-items: center;
+    /* padding-top: 70px; */
+    /* border-top: 1px solid #444; */
+    /* background-color: rgba(0,0,0,.75); */
+    background-color:white;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+    margin: 0;
   }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+  }
+  .site-navbar ul li:first-child {
+      padding-top: 30px;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul li a:hover {
+    background-color: rgba(255,255,255,.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  .intro-area h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }  
+  /* navbar css for mobile end */
 }
-
+/* mobile breakpoint end */
 </style>
+<script>
+import _Header from './_Header.vue';
+export default {
+  components: { _Header },
+    mounted (){
+        const navToggler = document.querySelector('.nav-toggler');
+        const navMenu = document.querySelector('.site-navbar ul');
+        const navLinks = document.querySelectorAll('.site-navbar a');
+
+        // load all event listners
+        allEventListners();
+
+        // functions of all event listners
+        function allEventListners() {
+        // toggler icon click event
+        navToggler.addEventListener('click', togglerClick);
+        // nav links click event
+        navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+        }
+
+        // togglerClick function
+        function togglerClick() {
+        navToggler.classList.toggle('toggler-open');
+        navMenu.classList.toggle('open');
+        }
+
+        // navLinkClick function
+        function navLinkClick() {
+        if(navMenu.classList.contains('open')) {
+            navToggler.click();
+        }
+        }
+    }
+}
+</script>

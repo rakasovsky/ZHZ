@@ -13,7 +13,7 @@
         </div>
     </section>
     <section class="services pb">
-        <div class="s_wrapper">
+        <div class="s_wrapper mp15">
             <img src="~~/assets/img/s/b2.jpg" alt="">
         </div>
         <div class="s_wrapper  text">
@@ -23,7 +23,7 @@
                 <hr>
             </div>
         </div>
-        <div class="s_wrapper">
+        <div class="s_wrapper mp15">
             <img src="~~/assets/img/s/b2.jpg" alt="">
         </div>
         <div class="s_wrapper  text">
@@ -40,7 +40,7 @@
                 <hr>
             </div>
         </div>
-        <div class="s_wrapper">
+        <div class="s_wrapper mp15">
             <img src="~~/assets/img/s/b3.jpg" alt="">
         </div>
         <div class="s_wrapper text">
@@ -50,7 +50,7 @@
                 <hr>
             </div>
         </div>
-        <div class="s_wrapper">
+        <div class="s_wrapper mp15">
             <img src="~~/assets/img/s/b3.jpg" alt="">
         </div>
     </section>
@@ -87,8 +87,9 @@
                 align-self: center;
             }
             img{
-               object-fit: cover;
-               object-position: 50% 50%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
             }
         }
         .text {
