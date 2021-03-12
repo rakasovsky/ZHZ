@@ -7,6 +7,7 @@
             :disable-scroll="true"
             @close="index = null"
         />
+        <h2 class="fs42" >Фотографии наших постояльцев</h2>
         <ul>
             <!-- Thumbnails -->
             <li
@@ -93,6 +94,9 @@ export default {
 <style lang="scss" scoped>
   .g_wrapper {
     padding: 100px 0;
+    h2 {
+      text-align: center;
+    }
   }
   ul {
     display: flex;

@@ -3,9 +3,9 @@
     <v-container>
       <vue-disqus
         v-if="metadata"
-        shortname="rakasovsky-netlify-app"
-        :identifier="`rakasovsky-netlify-app-${metadata.title}`"
-        :url="`https://rakasovsky.netlify.app/${metadata.url}`"
+        shortname="zabota-pet-hotel-kh-ua"
+        :identifier="`zabota-pet-hotel-kh-ua-${metadata.title}`"
+        :url="`http://zabota.pet-hotel.kh.ua/${metadata.url}`"
       ></vue-disqus>
         </v-container>
     </v-layout>

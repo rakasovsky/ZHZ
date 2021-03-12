@@ -4,7 +4,6 @@
                 <div class="footer_top">
                     <nuxt-link :to="localePath('/')">
                         <div class="logo_wrapper">
-                            <img src="@/assets/img/Zabota.png" alt="logo">
                             <div class="logo_text">
                                 <span class="fs24">Зоо</span>
                                 <span class="fs24">{{$t('hotel')}}</span>
@@ -16,7 +15,7 @@
                         <p>{{$t('location1')}},</p>
                         <p>{{$t('location2')}}</p>
                         <p>{{$t('location3')}}</p>
-                        <a href="mailto:admin@" class="white">zoootelzabota@gmail.com</a>
+                        <a href="mailto:zoohotelzabota@gmail.com" class="white">zoootelzabota@gmail.com</a>
                     </div>
                     <div class="phone_block">
                         <a href="tel:/+380676473300" class="white">Тел: +380676473300</a>

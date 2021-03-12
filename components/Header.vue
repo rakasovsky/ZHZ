@@ -156,9 +156,9 @@
 /* mobile breakpoint end */
 </style>
 <script>
-import _Header from './_Header.vue';
+
 export default {
-  components: { _Header },
+ 
     mounted (){
         const navToggler = document.querySelector('.nav-toggler');
         const navMenu = document.querySelector('.site-navbar ul');

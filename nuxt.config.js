@@ -18,7 +18,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Зоо отель' }
     ],
     link: [
-      { rel: 'shortcut icon', href: 'favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   rootDir: __dirname,

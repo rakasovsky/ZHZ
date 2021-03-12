@@ -18,10 +18,10 @@
                 <p>{{$t('mainSlogan1')}}</p>
                 <p>{{$t('mainSlogan2')}}</p>
                 <p>{{$t('mainSlogan3')}}</p>
-                <div class="zbt_btn"><span><a href="portfolio" >Читать дальше</a></span></div>
+                <!-- <div class="zbt_btn"><span><a href="portfolio" >Читать дальше</a></span></div> -->
             </section>
             <Services />
-            <section class="main_page_facilities m25 pb">
+            <section class="main_page_facilities m25 pb mp15">
                 <h2 class="fs42">
                     {{$t('mainFacilities1')}}
                 </h2>
@@ -58,7 +58,7 @@ export default {
     width: 100%;
     
     .main_page_promo {
-        display: flex;
+        display: none;
         position: relative;
         video{
             width: 100%;

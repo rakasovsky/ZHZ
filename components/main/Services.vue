@@ -12,7 +12,7 @@
                          <p>
                             {{ $t('mainService1_1')}}
                         </p>
-                        <div class="zbt_btn"><span><a href="portfolio" >Забронировать комнату</a></span></div>
+                        <div class="zbt_btn"><span><a href="/contacts" >Забронировать комнату</a></span></div>
                     </div>
                 </div>
                 <div class="service_block pb right">
@@ -27,7 +27,7 @@
                         <p>
                             {{ $t('mainService2_1')}}
                         </p>
-                        <div class="zbt_btn"><span><a href="portfolio" >Забронировать вольер</a></span></div>
+                        <div class="zbt_btn"><span><a href="/contacts" >Забронировать вольер</a></span></div>
                     </div>
                 </div>
                 <div class="service_block pb left">
@@ -42,7 +42,7 @@
                         <p>
                             {{ $t('mainService3_1')}}
                         </p>
-                         <div class="zbt_btn"><span><a href="portfolio" >Забронировать вольер</a></span></div>
+                         <div class="zbt_btn"><span><a href="/contacts" >Свяжитесь с нами</a></span></div>
                     </div>
                 </div>
                 <div class="service_block pb right">
@@ -57,7 +57,7 @@
                         <p>
                             {{ $t('mainService4_1')}}
                         </p>
-                        <div class="zbt_btn"><span><a href="portfolio" >Забронировать вольер</a></span></div>
+                        <div class="zbt_btn"><span><a href="/contacts">Заказать машину</a></span></div>
                     </div>
                 </div>
             </section>

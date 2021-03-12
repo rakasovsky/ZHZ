@@ -314,7 +314,7 @@ footer {
              .logo_text {
               display: flex;
               flex-direction: column;
-              padding-left: 17px;
+              // padding-left: 17px;
               padding-top: 5px;
               color: white;
           }
@@ -437,6 +437,9 @@ footer {
 
   .mp15 {
    padding: 0 15px;
+  }
+  .mar15 {
+    margin: 0 15px;
   }
   header {
     .header_desktop { 
