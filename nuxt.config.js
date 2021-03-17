@@ -15,7 +15,8 @@ module.exports = {
     title: 'Зоо Отель Забота',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no' },
-      { hid: 'description', name: 'description', content: 'Зоо отель' }
+      { hid: 'description', name: 'description', content: '' },
+      { hid: 'author', name: 'author', content: 'Rrr' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -40,6 +41,12 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    ['nuxt-mail', {
+      smtp: {
+        host: "mail.pet-hotel.kh.ua",
+        port: 587,
+      },
+    }],
     'nuxt-trailingslash-module',
     'nuxt-webfontloader',
     'cookie-universal-nuxt',

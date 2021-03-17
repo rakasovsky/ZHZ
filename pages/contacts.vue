@@ -1,17 +1,13 @@
 <template>
     <section class="contact_page m25">
+        <div class="seo">
+            <h1>Передержка собак в Харькове и области</h1>
+            <h2>Зооотель Забота | номер телефона +380676473300</h2>
+            <h2>Зооотель Забота | заказ номеров и вольеров</h2>
+        </div>
         <div class="contacts_info">
-            <!-- <div class="contacts_top p100">
-                    <h2 class="fs42">О НАШЕМ ЗОО ОТЕЛЕ</h2>
-                    <hr/>
-                    <p>
-                        Зоо Отель Забота расположен в ближайшем пригороде Харькова.<br>
-                        бла<br>
-                        бла-бла</br>
-                    </p>
-            </div> -->
             <div class="contacts_bottom p100">
-                    <h2>Свяжись с нами</h2>
+                    <h2 class="fs42">Контактная информация</h2>
                     <hr/>
                     <div>
                         {{$t('location2')}}, {{$t('location1')}} <br>
@@ -23,7 +19,6 @@
                         <a type="text/html" target="_blank" href="https://www.facebook.com/%D0%97%D0%BE%D0%BE%D0%9E%D1%82%D0%B5%D0%BB%D1%8C-%D0%97%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-2328027027415612/"> <img src="@/assets/img/facebook.webp" alt="ссылка на группу в Facebook"></a>
                         <a type="text/html" target="_blank" href="https://instagram.com/zoootelzabota?igshid=1ja6ud0arbg5t"><img src="@/assets/img/instagram.webp" alt="Ссылка на instagram"></a>
                     </div>
-
                     <form action="/mail" method="post" id="ajax_form">
                             <div>
                                 <input type="text" name="name" id="f_name" placeholder="Ваше имя">
@@ -37,8 +32,8 @@
                             <div>
                                 <select  name="option" id="f_theme">
                                     <option value="" disabled selected>Животное</option>
-                                    <option value="Предложение о сотрудничестве">Собака</option>
-                                    <option value="Материалы и услуги">Кошка</option>
+                                    <option value="Собака">Собака</option>
+                                    <option value="Кошка">Кошка</option>
                                 </select>
                             </div>
                             <div>
@@ -114,3 +109,61 @@
   }
 
 </style>
+
+<script>
+export default {
+      head: {
+        
+        title: 'Контактная информация Зооотель Забота | Харьков',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Контакты Зооотель Забота | Харьков | Отель для животных Харьков | Гостиница для собак Харьков | Передержка собак Харьков | Отель Забота Харьков'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Зооотель, Зоо гостиница, Передержка, Гостиница для животных, Отель Забота'
+        }
+        ],
+          
+      script: [
+        {
+          src:
+            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
+        }
+      ]
+    },
+    mounted () {
+        $("#ajax_form").submit(function(e) {
+        const str = $(this).serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "/mail.php",
+            data: str,
+            dataType: 'json',
+            success: function(response) {
+                var result;
+                if (response.status == 'success') {
+                $("#f_name").val('');
+                $("#f_phone").val('');
+                $("#f_email").val('');
+                $("#f_message").val('');
+                $('#result_form').html('Спасибо, '+response.message);
+                } else {
+                $('#result_form').html('Ошибка: '+response.message)
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $('#result_form').html('Ошибка: '+errorThrown + ' (' + textStatus + ')');
+            }
+
+        });
+        return false;
+        e.preventDefault();
+    });
+    }
+}
+</script>

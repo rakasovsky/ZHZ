@@ -1,6 +1,10 @@
 <template>
     
     <main>
+            <div class="seo">
+                <h1>Гостиница для животных в Харькове</h1>
+                <h2>Передержка собак Харьков</h2>
+            </div>
            <section class="main_page_promo">
                 <video class="bg-container mp4 desktop" playsinline="" autoplay="" loop="" muted="">
                     <source src="https://www.callofduty.com/cdn/mw/videos/mp/gunbench-alt-desktop-new.mp4" type="video/mp4">
@@ -44,6 +48,23 @@ import Services from "@/components/main/Services"
 import Facilities from "@/components/main/Facilities"
 
 export default {
+    head: {
+        title: 'Зооотель Забота - современная гостиница для животных | Харьков',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Зоотель Харьков | Отель для животных Харьков | Гостиница для собак Харьков | Передержка собак Харьков | Отель Забота Харьков'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Зооотель, Зоо гостиница, Передержка, Гостиница для животных, Отель Забота'
+        }
+        ],
+    },
+
+
     components: {
         Services,
         Facilities

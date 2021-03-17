@@ -111,6 +111,13 @@ $p100: 100px 5%;
   font-size:42px;
 }
 
+
+
+
+.seo {
+  display: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -332,7 +339,10 @@ footer {
 
 
 .About_page {
-  min-height: 60vh;
+  min-height: 80vh;
+  h2 {
+    margin-bottom: 25px;
+  }
 }
 
 //ROOMS

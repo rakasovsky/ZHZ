@@ -1,5 +1,6 @@
 <template>
-   <no-ssr>
+  
+   <client-only>
        <div class="m25 g_wrapper">
              <LightGallery 
             :images="images"
@@ -7,6 +8,10 @@
             :disable-scroll="true"
             @close="index = null"
         />
+        <div class="seo">
+          <h1>Фотографии постояльцев зооотеля Забота</h1>
+           <h2>Галерея животных</h2>
+        </div>
         <h2 class="fs42" >Фотографии наших постояльцев</h2>
         <ul>
             <!-- Thumbnails -->
@@ -33,10 +38,26 @@
             </li>
         </ul>
        </div>
-</no-ssr> 
+</client-only> 
 </template>
 <script>
 export default {
+    head: {
+        title: 'Галерея Зооотеля Забота | Харьков',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Фотографии Зооотель Забота | Харьков | Отель для животных Харьков | Гостиница для собак Харьков | Передержка собак Харьков | Отель Забота Харьков'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Зооотель, Зоо гостиница, Передержка, Гостиница для животных, Отель Забота, Фотогалерея, Фотографии'
+        }
+        ],
+ 
+    },
     data: function () {
       return {
         images: [

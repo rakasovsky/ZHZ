@@ -396,7 +396,6 @@ footer .footer_container .footer_top .logo_wrapper .logo_text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 17px;
   padding-top: 5px;
   color: white;
 }
@@ -412,7 +411,11 @@ footer .footer_container .footer_bottom {
 }
 
 .About_page {
-  min-height: 60vh;
+  min-height: 80vh;
+}
+
+.About_page h2 {
+  margin-bottom: 25px;
 }
 
 .rooms_page {
@@ -544,6 +547,9 @@ footer .footer_container .footer_bottom {
 @media (max-width: 500px) {
   .mp15 {
     padding: 0 15px;
+  }
+  .mar15 {
+    margin: 0 15px;
   }
   header .header_desktop nav {
     padding: 0;
