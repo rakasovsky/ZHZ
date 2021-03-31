@@ -24,24 +24,24 @@
         <div class="s_wrapper  text">
             <div>
                  <span class="big_nmbr">01</span>
-                <p class="fs42">Груминг</p>
+                <p class="fs42">Купание</p>
                 <hr>
             </div>
         </div>
         <div class="s_wrapper mp15">
-            <img src="~~/assets/img/s/b2.jpg" alt="">
+            <img src="~~/assets/img/s/p1.jpg" alt="">
         </div>
         <div class="s_wrapper  text">
             <div>
                  <span class="big_nmbr">02</span>
-                <p class="fs42">Игры</p>
+                <p class="fs42">Груминг</p>
                 <hr>
             </div>
         </div>
         <div class="s_wrapper text">
             <div>
                  <span class="big_nmbr">03</span>
-                <p class="fs42">Сад</p>
+                <p class="fs42">Триминг</p>
                 <hr>
             </div>
         </div>
@@ -150,12 +150,12 @@
 <script>
 export default {
     head: {
-        title: 'Слуги Зооотеля Забота | Харьков',
+        title: 'Услуги Зооотеля Забота | Харьков',
         meta: [
         {
             hid: 'description',
             name: 'description',
-            content: 'Услуги Зооотель Забота | Харьков | Отель для животных Харьков | Гостиница для собак Харьков | Передержка собак Харьков | Отель Забота Харьков'
+            content: 'Услуги Зооотель Забота | Отель для животных | Гостиница для собак | Передержка собак  | Отель Забота Харьков'
         },
         {
             hid: 'keywords',

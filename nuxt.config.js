@@ -47,6 +47,7 @@ module.exports = {
         port: 587,
       },
     }],
+    'nuxt-lazy-load',
     'nuxt-trailingslash-module',
     'nuxt-webfontloader',
     'cookie-universal-nuxt',
@@ -98,12 +99,12 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
   render: {
-    // http2: {
-    //     push: true,
-    //     pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
-    //     .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`)
-    //   },
-    // compressor: false,
+    http2: {
+        push: true,
+        pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
+        .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`)
+      },
+    compressor: false,
     resourceHints: false,
     etag: false,
     static: {
