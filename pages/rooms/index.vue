@@ -20,9 +20,9 @@
                 <div class="room_desc">
                     <h3>Стандарт</h3>
                     <p class="m25px">Откройте для себя комфорт наших стандартных номеров</p>
-                    <img src="@/assets/img/heater-icon-25.jpg" alt="теплый пол" class="m25px">
-                    <img src="@/assets/img/fun.jpg" alt="вентиляция" class="m25px">
-                    <img src="@/assets/img/ip-camera-icon.png" alt="видеонаблюдение" class="m25px">
+                    <img v-tooltip="'Теплый пол'" src="@/assets/img/heater-icon-25.jpg" alt="теплый пол" class="m25px">
+                    <img v-tooltip="'Вентиляция'" src="@/assets/img/fun.jpg" alt="вентиляция" class="m25px">
+                    <img v-tooltip="'Видеонаблюдение'" src="@/assets/img/ip-camera-icon.png" alt="видеонаблюдение" class="m25px">
                     <div class="price_wrapper">
                         <span class="from">
                             <span>От</span>
@@ -41,9 +41,9 @@
                 <div class="room_desc">
                     <h3>Стандарт</h3>
                     <p class="m25px">Откройте для себя комфорт наших стандартных номеров</p>
-                    <img src="@/assets/img/heater-icon-25.jpg" alt="теплый пол" class="m25px">
-                    <img src="@/assets/img/fun.jpg" alt="вентиляция" class="m25px">
-                    <img src="@/assets/img/ip-camera-icon.png" alt="видеонаблюдение" class="m25px">
+                    <img v-tooltip="'Теплый пол'" src="@/assets/img/heater-icon-25.jpg" alt="теплый пол" class="m25px">
+                    <img v-tooltip="'Вентиляция'" src="@/assets/img/fun.jpg" alt="вентиляция" class="m25px">
+                    <img v-tooltip="'Видеонаблюдение'" src="@/assets/img/ip-camera-icon.png" alt="видеонаблюдение" class="m25px">
                     <div class="price_wrapper">
                         <span class="from">
                             <span>От</span>
@@ -62,9 +62,9 @@
                 <div class="room_desc">
                     <h3>Стандарт</h3>
                     <p class="m25px">Откройте для себя комфорт наших стандартных номеров</p>
-                    <img src="@/assets/img/heater-icon-25.jpg" alt="теплый пол" class="m25px">
-                    <img src="@/assets/img/fun.jpg" alt="вентиляция" class="m25px">
-                    <img src="@/assets/img/ip-camera-icon.png" alt="видеонаблюдение" class="m25px">
+                    <img v-tooltip="'Теплый пол'" src="@/assets/img/heater-icon-25.jpg" alt="теплый пол" class="m25px">
+                    <img v-tooltip="'Вентиляция'" src="@/assets/img/fun.jpg" alt="вентиляция" class="m25px">
+                    <img v-tooltip="'Видеонаблюдение'" src="@/assets/img/ip-camera-icon.png" alt="видеонаблюдение" class="m25px">
                     <div class="price_wrapper">
                         <span class="from">
                             <span>От</span>

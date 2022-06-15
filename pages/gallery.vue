@@ -28,6 +28,8 @@
                 '/g/zoootel (20).jpg',
                 '/g/v1.jpg',
                 '/g/v2.jpg',
+                '/g/zabota1.webp',
+                '/g/zabota2.webp',
                 
             ]"
             :key="imageIndex"
@@ -104,6 +106,14 @@ export default {
           {
             title: 'Mountain goat on the rocks',
             url: '/g/zoootel (8).jpg',
+          },
+          {
+            title: 'Mountain goat on the rocks',
+            url: '/g/zabota1.webp',
+          },
+          {
+            title: 'Mountain goat on the rocks',
+            url: '/g/zabota2.webp',
           },
         ],
         index: null

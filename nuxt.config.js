@@ -20,7 +20,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script:[
+      {
+        src: 'https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js',  type: "text/javascript"
+      },
+    ] 
+
   },
   rootDir: __dirname,
   serverMiddleware: [
@@ -35,6 +41,7 @@ module.exports = {
   ],
   plugins: [
     { src: '@/plugins/gallery', mode: 'client' },
+    { src: '@/plugins/tooltip'},
     '~/plugins/lightGallery.client.js',
     '@/plugins/disqus'
   ],
